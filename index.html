@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light" data-font-size="medium">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="TecnoRed – Inclusión digital para zonas rurales e Iberoamérica."/>
+  <title>TecnoRed – Inclusión Digital Iberoamericana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- BARRA ACCESIBILIDAD -->
+<div class="a11y-bar" role="toolbar" aria-label="Herramientas de accesibilidad">
+  <button class="a11y-btn" id="btn-tts" aria-pressed="false" title="Lectura en voz alta">
+    <span class="a11y-icon">🔊</span><span class="a11y-label">Voz</span>
+  </button>
+  <button class="a11y-btn" id="btn-font-dec" aria-label="Reducir texto">
+    <span class="a11y-icon">A-</span>
+  </button>
+  <button class="a11y-btn" id="btn-font-inc" aria-label="Aumentar texto">
+    <span class="a11y-icon">A+</span>
+  </button>
+  <button class="a11y-btn" id="btn-theme" aria-pressed="false" title="Cambiar tema">
+    <span class="a11y-icon" id="theme-icon">🌙</span><span class="a11y-label">Modo</span>
+  </button>
+  <button class="a11y-btn" id="btn-contrast" aria-pressed="false" title="Alto contraste">
+    <span class="a11y-icon">◑</span><span class="a11y-label">Contraste</span>
+  </button>
+</div>
+
+<!-- NAVEGACIÓN -->
+<header class="site-header" role="banner">
+  <nav class="nav-main" aria-label="Navegación principal">
+    <a href="#" class="nav-logo" data-page="inicio">
+      <span class="logo-mark">T</span>
+      <span class="logo-text">TecnoRed</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu" role="list">
+      <li><a class="nav-link active" data-page="inicio" href="#inicio">Inicio</a></li>
+      <li><a class="nav-link" data-page="proyecto" href="#proyecto">Proyecto</a></li>
+      <li><a class="nav-link" data-page="plataforma" href="#plataforma">Aprende</a></li>
+      <li><a class="nav-link" data-page="emergencias" href="#emergencias">Emergencias</a></li>
+      <li><a class="nav-link" data-page="equipo" href="#equipo">Equipo</a></li>
+      <li><a class="nav-link" data-page="impacto" href="#impacto">Impacto</a></li>
+      <li><a class="nav-link nav-premium-link" data-page="planes" href="#planes">⭐ Planes</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content" role="main">
+
+<!-- ════════════════════════════════
+     INICIO
+════════════════════════════════ -->
+<section class="page active" id="page-inicio">
+  <div class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">La tecnología</span>
+        <em class="title-em">para todos,</em>
+        <span class="title-line">sin excepción.</span>
+      </h1>
+      <p class="hero-desc">TecnoRed es una plataforma de inclusión digital para personas de zonas rurales y con baja alfabetización digital. El conocimiento tecnológico es un derecho, no un privilegio.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" data-page="plataforma">Comenzar a aprender →</button>
+        <button class="btn-ghost" data-page="proyecto">Ver el proyecto</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="250">0</span><span class="stat-suffix">M+</span>
+          <span class="stat-label">personas sin acceso digital</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="7">0</span>
+          <span class="stat-label">módulos interactivos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">accesible desde celular</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-app">
+            <div class="app-icon">📱</div>
+            <div class="app-text">Aprende a usar<br/>tu celular</div>
+            <div class="app-progress"><div class="progress-bar-anim"></div></div>
+            <div class="app-steps">
+              <span class="app-step done">✓ Paso 1</span>
+              <span class="app-step done">✓ Paso 2</span>
+              <span class="app-step active">→ Paso 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-card card-1">✅ Completado</div>
+      <div class="float-card card-2">🎯 ¡Muy bien!</div>
+    </div>
+  </div>
+
+  <section class="section-problem">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">El problema que resolvemos</span>
+        <h2 class="section-title">La brecha digital es una crisis silenciosa</h2>
+        <p class="section-subtitle">Millones de personas en Iberoamérica están excluidas del mundo digital.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card" tabindex="0">
+          <div class="pc-icon">🌾</div>
+          <h3>Zonas rurales aisladas</h3>
+          <p>Millones de familias nunca han tocado una computadora ni navegado por Internet.</p>
+          <div class="pc-stat">+180M afectados</div>
+        </div>
+        <div class="problem-card" tabindex="0">
+          <div class="pc-icon">📵</div>
+          <h3>Exclusión educativa digital</h3>
+          <p>Sin conocimientos básicos, las personas pierden acceso a empleos, salud y educación.</p>
+          <div class="pc-stat">40% sin acceso</div>
+        </div>
+        <div class="problem-card" tabindex="0">
+          <div class="pc-icon">⚠️</div>
+          <h3>Vulnerabilidad ante estafas</h3>
+          <p>La falta de educación digital expone a fraudes, desinformación y robo de identidad.</p>
+          <div class="pc-stat">$3.5B perdidos/año</div>
+        </div>
+        <div class="problem-card" tabindex="0">
+          <div class="pc-icon">📉</div>
+          <h3>Desigualdad económica</h3>
+          <p>La brecha digital profundiza la desigualdad, dejando atrás a los más vulnerables.</p>
+          <div class="pc-stat">ODS 10 en riesgo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-goal">
+    <div class="container">
+      <div class="goal-inner">
+        <div class="goal-text">
+          <span class="section-tag">Nuestra misión</span>
+          <h2>Empoderar con conocimiento digital</h2>
+          <p>TecnoRed ofrece tutoriales simples, visuales e interactivos en español, para quienes se acercan a la tecnología por primera vez.</p>
+          <ul class="goal-list">
+            <li>✅ Tutoriales paso a paso en lenguaje sencillo</li>
+            <li>✅ Lectura en voz alta integrada</li>
+            <li>✅ Diseño optimizado para celulares de gama baja</li>
+            <li>✅ Completamente gratuito y sin registro</li>
+            <li>✅ Módulos para iOS (iPhone) y Android</li>
+            <li>✅ Emergencias digitales con soluciones rápidas</li>
+          </ul>
+          <button class="btn-primary" data-page="plataforma">Explorar módulos →</button>
+        </div>
+        <div class="goal-visual" aria-hidden="true">
+          <div class="goal-circles">
+            <div class="gc gc-outer"><span>Sociedad</span></div>
+            <div class="gc gc-mid"><span>Educación</span></div>
+            <div class="gc gc-inner"><span>TecnoRed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-howto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">¿Cómo funciona?</span>
+        <h2 class="section-title">Aprender nunca fue tan fácil</h2>
+      </div>
+      <div class="howto-steps">
+        <div class="hs-step"><div class="hs-num">1</div><div class="hs-icon">🎯</div><h3>Elige un tema</h3><p>Selecciona el módulo que más necesitas.</p></div>
+        <div class="hs-arrow">→</div>
+        <div class="hs-step"><div class="hs-num">2</div><div class="hs-icon">📖</div><h3>Lee o escucha</h3><p>Sigue los pasos o activa la voz para escucharlos.</p></div>
+        <div class="hs-arrow">→</div>
+        <div class="hs-step"><div class="hs-num">3</div><div class="hs-icon">🎮</div><h3>Practica</h3><p>Usa los botones de simulación para practicar.</p></div>
+        <div class="hs-arrow">→</div>
+        <div class="hs-step"><div class="hs-num">4</div><div class="hs-icon">🏆</div><h3>¡Lo lograste!</h3><p>Completa el módulo y guarda tu progreso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Historias reales</span>
+        <h2 class="section-title">Lo que dicen quienes ya aprendieron</h2>
+      </div>
+      <div class="testimonios-grid">
+        <div class="testimonio-card">
+          <div class="tc-quote">"Nunca pensé que iba a poder hacer una videollamada con mis hijos. ¡Ahora los veo todos los domingos!"</div>
+          <div class="tc-author"><div class="tc-avatar-sm">👩‍🌾</div><div><strong>Doña Rosa</strong><span>Comunidad rural, Cochabamba</span></div></div>
+        </div>
+        <div class="testimonio-card featured">
+          <div class="tc-quote">"Aprendí a no caer en estafas. Me mandaron un mensaje de un premio falso y lo reconocí gracias a TecnoRed."</div>
+          <div class="tc-author"><div class="tc-avatar-sm">👨‍🌾</div><div><strong>Don Carlos</strong><span>Agricultor, Santa Cruz</span></div></div>
+        </div>
+        <div class="testimonio-card">
+          <div class="tc-quote">"Creé mi correo electrónico siguiendo los pasos. Ahora puedo recibir documentos sin ir al pueblo."</div>
+          <div class="tc-author"><div class="tc-avatar-sm">👩</div><div><strong>María</strong><span>Maestra rural, Oruro</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-motivator">
+    <div class="container">
+      <blockquote class="motivator-quote">
+        <div class="mq-marks">"</div>
+        <p>No necesitas saber todo sobre tecnología. Solo necesitas dar el primer paso. Nosotros te acompañamos en cada uno.</p>
+        <cite>— Equipo TecnoRed</cite>
+      </blockquote>
+      <button class="btn-large" data-page="emergencias">🚨 Ver Emergencias Digitales</button>
+    </div>
+  </section>
+</section>
+
+<!-- ════════════════════════════════
+     PROYECTO
+════════════════════════════════ -->
+<section class="page" id="page-proyecto">
+  <div class="container">
+    <div class="page-header">
+      <span class="section-tag">Proyecto en continuación</span>
+      <h1>TecnoRed: Ciencia, Tecnología e Impacto Social</h1>
+      <p class="page-subtitle">Proyecto científico-tecnológico para resolver la brecha digital en Iberoamérica.</p>
+    </div>
+    <div class="project-pillars">
+      <div class="pillar-card" style="--accent:#4CAF82"><div class="pillar-num">01</div><h3>Enfoque Científico</h3><p>Basado en pedagogía inclusiva (DUA), metodología UX centrada en el usuario y tecnologías adaptativas para poblaciones vulnerables.</p></div>
+      <div class="pillar-card" style="--accent:#F5A623"><div class="pillar-num">02</div><h3>Enfoque Tecnológico</h3><p>HTML5, CSS3, JavaScript Vanilla y Web APIs (SpeechSynthesis, LocalStorage). SPA liviana, optimizada para conexiones lentas.</p></div>
+      <div class="pillar-card" style="--accent:#E74C6B"><div class="pillar-num">03</div><h3>Impacto Social</h3><p>Dirigido a más de 250 millones de personas sin alfabetización digital en comunidades rurales y adultos mayores.</p></div>
+      <div class="pillar-card" style="--accent:#9B59B6"><div class="pillar-num">04</div><h3>Innovación</h3><p>Módulos diferenciados iOS/Android, emergencias digitales ampliadas, chatbot integrado sin API key y planes adaptativos.</p></div>
+      <div class="pillar-card" style="--accent:#3498DB"><div class="pillar-num">05</div><h3>Creatividad</h3><p>Sistema de progreso gamificado, simulaciones interactivas y lenguaje inclusivo adaptado regionalmente.</p></div>
+      <div class="pillar-card" style="--accent:#1ABC9C"><div class="pillar-num">06</div><h3>Aporte al Mundo</h3><p>Contribuye al ODS 4 y ODS 10 de la ONU. Modelo replicable para países en desarrollo con alta brecha digital.</p></div>
+    </div>
+    <div class="project-timeline">
+      <h2>Evolución del Proyecto</h2>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><span class="tl-date">Fase 1</span><h4>Diagnóstico e Investigación</h4><p>Revisión bibliográfica e identificación de brechas digitales en comunidades rurales bolivianas.</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><span class="tl-date">Fase 2</span><h4>Diseño y Prototipado</h4><p>Arquitectura de información, diseño UX accesible y validación con usuarios reales.</p></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-content"><span class="tl-date">Fase 3</span><h4>Desarrollo Técnico</h4><p>Implementación SPA con módulos iOS/Android, TTS, chatbot y emergencias digitales.</p></div></div>
+        <div class="tl-item active"><div class="tl-dot"></div><div class="tl-content"><span class="tl-date">Fase 4 — Actual</span><h4>Pruebas y Concurso</h4><p>Evaluación de usabilidad y presentación al Concurso Iberoamericano INFOMATRIX.</p></div></div>
+      </div>
+    </div>
+    <div class="tech-stack">
+      <h2>Tecnologías Utilizadas</h2>
+      <div class="tech-grid">
+        <div class="tech-item"><span>🌐</span><strong>HTML5</strong><small>Semántico</small></div>
+        <div class="tech-item"><span>🎨</span><strong>CSS3</strong><small>Flexbox + Grid</small></div>
+        <div class="tech-item"><span>⚡</span><strong>JavaScript</strong><small>Vanilla</small></div>
+        <div class="tech-item"><span>🔊</span><strong>Speech API</strong><small>Voz integrada</small></div>
+        <div class="tech-item"><span>💾</span><strong>LocalStorage</strong><small>Progreso</small></div>
+        <div class="tech-item"><span>📱</span><strong>Mobile First</strong><small>Responsive</small></div>
+        <div class="tech-item"><span>♿</span><strong>WCAG 2.1</strong><small>Accesibilidad</small></div>
+        <div class="tech-item"><span>🤖</span><strong>Chatbot</strong><small>Sin API key</small></div>
+      </div>
+    </div>
+    <div class="continuation-badge">
+      <div class="cb-icon">🔄</div>
+      <div class="cb-text">
+        <strong>Proyecto en Continuación</strong>
+        <p>Esta edición incorpora módulos iOS/Android, chatbot inteligente, 12 emergencias digitales y planes Premium con lecciones diarias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════
+     APRENDE
+════════════════════════════════ -->
+<section class="page" id="page-plataforma">
+  <div class="container">
+    <div class="page-header">
+      <span class="section-tag">Centro de aprendizaje</span>
+      <h1>¿Qué quieres aprender hoy?</h1>
+      <p class="page-subtitle">Elige un módulo y aprende a tu ritmo, sin prisa y sin tecnicismos.</p>
+    </div>
+
+    <!-- BARRA PROGRESO GLOBAL -->
+    <div class="global-progress-bar" id="global-progress-bar">
+      <div class="gpb-info">
+        <span>Tu progreso general</span>
+        <span id="gpb-pct" class="gpb-pct-text">0%</span>
+      </div>
+      <div class="gpb-track">
+        <div class="gpb-fill" id="gpb-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <!-- GRID DE MÓDULOS -->
+    <div class="modules-grid" id="modules-grid" role="list" aria-label="Módulos de aprendizaje"></div>
+
+    <!-- MODAL MÓDULO -->
+    <div class="module-modal" id="module-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-overlay" id="modal-overlay"></div>
+      <div class="modal-box">
+        <button class="modal-close" id="modal-close" aria-label="Cerrar módulo">✕</button>
+        <div class="modal-header">
+          <span class="modal-icon" id="modal-icon"></span>
+          <h2 id="modal-title"></h2>
+        </div>
+        <div class="modal-progress">
+          <div class="mp-bar"><div class="mp-fill" id="mp-fill"></div></div>
+          <span class="mp-text" id="mp-text">Paso 1 de 4</span>
+        </div>
+        <div class="modal-content" id="modal-content"></div>
+        <div class="modal-nav">
+          <button class="btn-ghost" id="btn-prev-step">← Anterior</button>
+          <button class="btn-tts-modal" id="btn-tts-modal" title="Escuchar paso">🔊</button>
+          <button class="btn-primary" id="btn-next-step">Siguiente →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL OS SELECTOR (para módulo celular) -->
+    <div class="os-modal" id="os-modal" role="dialog" aria-modal="true" hidden>
+      <div class="modal-overlay" id="os-modal-overlay"></div>
+      <div class="os-modal-box">
+        <button class="modal-close" id="os-modal-close" aria-label="Cerrar">✕</button>
+        <div class="os-modal-icon">📱</div>
+        <h2 class="os-modal-title">¿Qué tipo de teléfono tienes?</h2>
+        <p class="os-modal-sub">Así te mostramos los pasos correctos para tu celular.</p>
+        <div class="os-modal-options">
+          <button class="os-opt-btn" id="os-pick-android">
+            <span class="os-opt-icon">🤖</span>
+            <strong>Android</strong>
+            <small>Samsung, Huawei, Motorola, Xiaomi y otros</small>
+          </button>
+          <button class="os-opt-btn" id="os-pick-ios">
+            <span class="os-opt-icon">🍎</span>
+            <strong>iPhone (iOS)</strong>
+            <small>Apple iPhone de cualquier modelo</small>
+          </button>
+        </div>
+        <div class="os-help-toggle">
+          <button class="os-help-link" id="os-help-toggle-btn">¿No sabes cuál tienes? Toca aquí</button>
+          <div class="os-help-info" id="os-help-info" hidden>
+            <div class="ohi-item"><span>🤖</span><div><strong>Android:</strong> Tiene Play Store, botones en pantalla, la tienda es de colores.</div></div>
+            <div class="ohi-item"><span>🍎</span><div><strong>iPhone:</strong> Tiene App Store, logo de manzana en la parte trasera.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════
+     EMERGENCIAS
+════════════════════════════════ -->
+<section class="page" id="page-emergencias">
+  <div class="emergencias-hero">
+    <div class="container">
+      <div class="eh-badge">🚨 Centro de Ayuda Digital</div>
+      <h1 class="eh-title">¿Algo salió mal?<br/>Te ayudamos ahora.</h1>
+      <p class="eh-sub">Toca tu problema y recibe instrucciones claras paso a paso.</p>
+    </div>
+  </div>
+  <div class="container">
+    <!-- GRID EMERGENCIAS -->
+    <div class="em-grid" id="em-grid">
+      <div class="em-card" tabindex="0" data-em="celular-robado">
+        <span class="em-card-icon">📵</span>
+        <h3>Me robaron el celular</h3>
+        <p>Bloquéalo a distancia y protege tus datos antes de que sea tarde.</p>
+        <span class="em-urgencia urgente">🔴 Urgente</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="contrasena">
+        <span class="em-card-icon">🔐</span>
+        <h3>Olvidé mi contraseña</h3>
+        <p>Recupera el acceso a cualquier cuenta paso a paso.</p>
+        <span class="em-urgencia comun">🟡 Común</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="estafado">
+        <span class="em-card-icon">🚨</span>
+        <h3>Creo que me estafaron</h3>
+        <p>Qué hacer en los primeros minutos para reducir el daño.</p>
+        <span class="em-urgencia urgente">🔴 Urgente</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="virus">
+        <span class="em-card-icon">🦠</span>
+        <h3>Mi celular tiene virus</h3>
+        <p>Cómo detectar y eliminar programas peligrosos gratis.</p>
+        <span class="em-urgencia tecnico">🔵 Técnico</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="internet">
+        <span class="em-card-icon">📡</span>
+        <h3>No funciona Internet</h3>
+        <p>Soluciones paso a paso para recuperar tu conexión.</p>
+        <span class="em-urgencia comun">🟡 Común</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="cuenta-bloqueada">
+        <span class="em-card-icon">🔒</span>
+        <h3>Me bloquearon la cuenta</h3>
+        <p>Recupera Facebook, Gmail, WhatsApp u otras apps.</p>
+        <span class="em-urgencia comun">🟡 Común</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="fotos-perdidas">
+        <span class="em-card-icon">🖼️</span>
+        <h3>Perdí mis fotos</h3>
+        <p>Cómo recuperar fotos borradas de tu celular.</p>
+        <span class="em-urgencia importante">🟠 Importante</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="llamada-estafa">
+        <span class="em-card-icon">📞</span>
+        <h3>Llamada de estafadores</h3>
+        <p>Qué hacer si te llaman haciéndose pasar por el banco.</p>
+        <span class="em-urgencia urgente">🔴 Urgente</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="celular-lento">
+        <span class="em-card-icon">🐌</span>
+        <h3>Mi celular está muy lento</h3>
+        <p>Trucos sencillos para que tu celular vuelva a ir rápido.</p>
+        <span class="em-urgencia tecnico">🔵 Técnico</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="bateria">
+        <span class="em-card-icon">🔋</span>
+        <h3>La batería dura muy poco</h3>
+        <p>Ajustes simples para que tu batería dure el doble.</p>
+        <span class="em-urgencia comun">🟡 Común</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="whatsapp-bloqueado">
+        <span class="em-card-icon">💬</span>
+        <h3>Problemas con WhatsApp</h3>
+        <p>Cuenta bloqueada, mensajes que no llegan, cómo recuperarla.</p>
+        <span class="em-urgencia comun">🟡 Común</span>
+      </div>
+      <div class="em-card" tabindex="0" data-em="compra-falsa">
+        <span class="em-card-icon">🛒</span>
+        <h3>Hice una compra falsa</h3>
+        <p>Pasos para recuperar tu dinero y denunciar el fraude.</p>
+        <span class="em-urgencia urgente">🔴 Urgente</span>
+      </div>
+    </div>
+
+    <!-- PANEL RESPUESTA -->
+    <div class="em-panel" id="em-panel" hidden>
+      <button class="em-back-btn" id="em-back-btn">← Volver a emergencias</button>
+      <div id="em-panel-content"></div>
+      <button class="btn-tts-em" id="btn-tts-em">🔊 Escuchar los pasos en voz alta</button>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════
+     EQUIPO
+════════════════════════════════ -->
+<section class="page" id="page-equipo">
+  <div class="container">
+    <div class="page-header">
+      <span class="section-tag">Quién soy</span>
+      <h1>El Equipo TecnoRed</h1>
+      <p class="page-subtitle">Estudiante comprometido con cerrar la brecha digital en Iberoamérica.</p>
+    </div>
+    <div class="team-solo-card">
+      <div class="tsc-avatar">👨‍💻</div>
+      <div class="tsc-info">
+        <h2>Santiago Jacobs</h2>
+        <span class="tsc-role">Desarrollador · Investigador · Diseñador UX</span>
+        <p>Responsable del desarrollo técnico, investigación científica, diseño de experiencia de usuario y contenido educativo de TecnoRed.</p>
+      </div>
+    </div>
+    <div class="advisor-section">
+      <h2>Docente Asesor</h2>
+      <div class="advisor-card">
+        <div class="ac-avatar">👨‍🏫</div>
+        <div class="ac-info">
+          <h3>Mauricio Salinas</h3>
+          <span>Docente de Informática · Colegio San Agustín</span>
+          <p>Guía y valida el desarrollo científico y tecnológico del proyecto, asegurando su rigor académico y pertinencia social.</p>
+        </div>
+      </div>
+    </div>
+    <div class="institution-card">
+      <h2>Institución Educativa</h2>
+      <div class="inst-info">
+        <div class="inst-item"><strong>Institución:</strong><span>Colegio San Agustín</span></div>
+        <div class="inst-item"><strong>Modalidad:</strong><span>Presencial</span></div>
+        <div class="inst-item"><strong>País:</strong><span>Bolivia, Iberoamérica</span></div>
+        <div class="inst-item"><strong>Categoría:</strong><span>Ciencias de la Computación e Informática</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════
+     IMPACTO
+════════════════════════════════ -->
+<section class="page" id="page-impacto">
+  <div class="container">
+    <div class="page-header">
+      <span class="section-tag">Transformación real</span>
+      <h1>Impacto Social de TecnoRed</h1>
+      <p class="page-subtitle">De la problemática detectada a la solución tecnológica con beneficios reales.</p>
+    </div>
+    <div class="impact-metrics">
+      <div class="im-card"><div class="im-num">+250M</div><div class="im-label">personas en brecha digital</div></div>
+      <div class="im-card"><div class="im-num">7</div><div class="im-label">módulos de aprendizaje</div></div>
+      <div class="im-card"><div class="im-num">12</div><div class="im-label">emergencias resueltas</div></div>
+      <div class="im-card"><div class="im-num">2</div><div class="im-label">sistemas operativos</div></div>
+      <div class="im-card"><div class="im-num">5</div><div class="im-label">ODS de la ONU</div></div>
+    </div>
+    <div class="impact-flow">
+      <div class="if-step"><div class="ifs-num">1</div><div class="ifs-content"><h3>Problema Detectado</h3><p>Más del 40% de la población rural latinoamericana carece de habilidades digitales básicas, generando exclusión social y económica.</p></div></div>
+      <div class="if-arrow">↓</div>
+      <div class="if-step"><div class="ifs-num">2</div><div class="ifs-content"><h3>Población Beneficiada</h3><div class="benefit-tags"><span>🌾 Comunidades rurales</span><span>👴 Adultos mayores</span><span>📚 Baja escolaridad</span><span>👩 Mujeres rurales</span><span>🏔️ Pueblos indígenas</span></div></div></div>
+      <div class="if-arrow">↓</div>
+      <div class="if-step"><div class="ifs-num">3</div><div class="ifs-content"><h3>Solución Tecnológica</h3><p>TecnoRed: plataforma web gratuita con módulos iOS/Android, tutoriales visuales, voz, chatbot y emergencias digitales.</p></div></div>
+      <div class="if-arrow">↓</div>
+      <div class="if-step accent-step"><div class="ifs-num">4</div><div class="ifs-content"><h3>Beneficios Esperados</h3><ul class="benefits-list"><li>📈 Mayor empleabilidad digital</li><li>🏥 Acceso a salud y gobierno en línea</li><li>🎓 Continuidad educativa digital</li><li>🔒 Reducción de fraudes digitales</li><li>👨‍👩‍👧 Vínculos familiares por videollamadas</li></ul></div></div>
+    </div>
+    <div class="antes-despues">
+      <h2>Antes y Después de TecnoRed</h2>
+      <div class="ad-grid">
+        <div class="ad-col antes"><h3>❌ Sin TecnoRed</h3><ul><li>No pueden hacer trámites en línea</li><li>Vulnerables ante estafas digitales</li><li>Sin comunicación con familia lejana</li><li>Excluidos del mercado laboral digital</li></ul></div>
+        <div class="ad-col despues"><h3>✅ Con TecnoRed</h3><ul><li>Realizan trámites y pagos en línea</li><li>Identifican y evitan estafas</li><li>Videollamadas con familia lejana</li><li>Acceso a empleos digitales</li></ul></div>
+      </div>
+    </div>
+    <div class="ods-section">
+      <h2>Objetivos de Desarrollo Sostenible (ODS-ONU)</h2>
+      <div class="ods-grid">
+        <div class="ods-card" style="--ods-color:#C5192D"><strong>ODS 1</strong><span>Fin de la Pobreza</span></div>
+        <div class="ods-card" style="--ods-color:#DDA63A"><strong>ODS 4</strong><span>Educación de Calidad</span></div>
+        <div class="ods-card" style="--ods-color:#FF3A21"><strong>ODS 8</strong><span>Trabajo Decente</span></div>
+        <div class="ods-card" style="--ods-color:#DD1367"><strong>ODS 10</strong><span>Reducción Desigualdades</span></div>
+        <div class="ods-card" style="--ods-color:#56C02B"><strong>ODS 17</strong><span>Alianzas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════
+     PLANES
+════════════════════════════════ -->
+<section class="page" id="page-planes">
+  <div class="planes-hero">
+    <div class="container">
+      <span class="section-tag" style="color:#fff;border-color:rgba(255,255,255,0.3)">Elige tu experiencia</span>
+      <h1 class="planes-title">Planes TecnoRed</h1>
+      <p class="planes-sub">Empieza gratis y mejora cuando quieras. Sin compromisos.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="planes-grid">
+      <div class="plan-card">
+        <div class="plan-badge free">Gratis</div>
+        <div class="plan-price"><span class="plan-amount">$0</span><span class="plan-period">/siempre</span></div>
+        <h3 class="plan-name">Plan Básico</h3>
+        <p class="plan-desc">Todo lo que necesitas para comenzar tu viaje digital sin pagar nada.</p>
+        <ul class="plan-features">
+          <li>✅ 7 módulos interactivos completos</li>
+          <li>✅ Módulos para Android e iPhone</li>
+          <li>✅ Lectura en voz alta</li>
+          <li>✅ Modo oscuro y alto contraste</li>
+          <li>✅ 12 emergencias digitales resueltas</li>
+          <li>✅ Chatbot asistente básico</li>
+          <li>✅ Guardado de progreso</li>
+          <li>✅ Sin registro ni contraseña</li>
+        </ul>
+        <button class="plan-btn plan-btn-free" data-page="plataforma">Comenzar gratis →</button>
+      </div>
+      <div class="plan-card featured-plan">
+        <div class="plan-popular-badge">⭐ Más popular</div>
+        <div class="plan-badge pro">Pro</div>
+        <div class="plan-price"><span class="plan-amount">$5</span><span class="plan-period">/mes</span></div>
+        <h3 class="plan-name">Plan Avanzado</h3>
+        <p class="plan-desc">Aprende cada día con ayuda personalizada, como Duolingo pero para tecnología.</p>
+        <ul class="plan-features">
+          <li>✅ Todo el Plan Básico incluido</li>
+          <li>⭐ Lección nueva cada día por IA</li>
+          <li>⭐ Notificaciones "Tu lección de hoy"</li>
+          <li>⭐ Chatbot avanzado personalizado</li>
+          <li>⭐ Modo Tercera Edad (letra grande, voz lenta)</li>
+          <li>⭐ Ejercicios de repaso diarios</li>
+          <li>⭐ Resumen semanal de progreso</li>
+          <li>⭐ Soporte prioritario por chat</li>
+        </ul>
+        <button class="plan-btn plan-btn-pro" id="btn-plan-pro">Próximamente →</button>
+        <p class="plan-note">* En desarrollo. Déjanos tu correo y te avisamos.</p>
+      </div>
+    </div>
+    <div class="planes-compare">
+      <h2>¿Cuál es la diferencia?</h2>
+      <div class="compare-table">
+        <div class="ct-header"><span>Función</span><span>Básico</span><span>Pro</span></div>
+        <div class="ct-row"><span>Módulos de aprendizaje</span><span>✅</span><span>✅</span></div>
+        <div class="ct-row"><span>Android e iPhone</span><span>✅</span><span>✅</span></div>
+        <div class="ct-row"><span>Lectura en voz alta</span><span>✅</span><span>✅</span></div>
+        <div class="ct-row"><span>Emergencias digitales</span><span>✅</span><span>✅</span></div>
+        <div class="ct-row"><span>Chatbot asistente</span><span>Básico</span><span>⭐ Avanzado</span></div>
+        <div class="ct-row"><span>Lección diaria nueva</span><span>❌</span><span>⭐ ✅</span></div>
+        <div class="ct-row"><span>Notificaciones diarias</span><span>❌</span><span>⭐ ✅</span></div>
+        <div class="ct-row"><span>Modo Tercera Edad</span><span>❌</span><span>⭐ ✅</span></div>
+        <div class="ct-row"><span>Precio</span><span>Gratis</span><span>⭐ $5/mes</span></div>
+      </div>
+    </div>
+    <div class="pro-notify">
+      <div class="pn-icon">⭐</div>
+      <div class="pn-text">
+        <h3>¿Te interesa el Plan Pro?</h3>
+        <p>Déjanos tu correo y serás el primero en saberlo.</p>
+      </div>
+      <div class="pn-form">
+        <input type="email" id="pro-email" placeholder="tucorreo@gmail.com" aria-label="Tu correo"/>
+        <button class="btn-primary" id="btn-pro-notify">Avisarme</button>
+      </div>
+      <p class="pn-success" id="pn-success" hidden>✅ ¡Listo! Te avisaremos cuando esté disponible.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-mark">T</span>
+        <div><strong>TecnoRed</strong><p>Inclusión digital para Iberoamérica</p></div>
+      </div>
+      <div class="footer-info">
+        <p>Concurso Iberoamericano de Proyectos Estudiantiles en Ciencia y Tecnología</p>
+        <p><strong>SOLACYT · IBEROCIENCIAS · INFOMATRIX</strong></p>
+        <p>© 2026 Santiago Jacobs — Colegio San Agustín, Bolivia.</p>
+      </div>
+      <div class="footer-links">
+        <button class="footer-nav-btn" data-page="inicio">Inicio</button>
+        <button class="footer-nav-btn" data-page="plataforma">Aprender</button>
+        <button class="footer-nav-btn" data-page="emergencias">Emergencias</button>
+        <button class="footer-nav-btn" data-page="planes">Planes</button>
+        <button class="footer-nav-btn" data-page="impacto">Impacto</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="progress-toast" id="progress-toast" role="status" aria-live="polite" hidden>🎉 <span id="toast-text">¡Módulo completado!</span></div>
+
+<!-- CHATBOT -->
+<button class="chat-fab" id="chat-fab" aria-label="Abrir asistente">
+  <span class="chat-fab-icon" id="chat-fab-icon">💬</span>
+  <span class="chat-fab-badge" id="chat-fab-badge">1</span>
+</button>
+<div class="chat-window" id="chat-window" hidden role="dialog" aria-modal="true" aria-label="Asistente TecnoRed">
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <div class="chat-avatar">🤖</div>
+      <div><strong>Asistente TecnoRed</strong><span class="chat-status"><span class="chat-dot"></span> En línea</span></div>
+    </div>
+    <div class="chat-header-actions">
+      <button class="chat-header-btn" id="chat-clear" title="Limpiar">🗑️</button>
+      <button class="chat-header-btn" id="chat-close" title="Cerrar">✕</button>
+    </div>
+  </div>
+  <div class="chat-messages" id="chat-messages" aria-live="polite">
+    <div class="chat-msg bot">
+      <div class="chat-bubble">👋 ¡Hola! Soy el asistente de <strong>TecnoRed</strong>.<br/>Pregúntame sobre tecnología.<br/><em>Ej: ¿Qué es WhatsApp? · ¿Cómo creo un correo?</em></div>
+      <span class="chat-time">Ahora</span>
+    </div>
+  </div>
+  <div class="chat-suggestions" id="chat-suggestions">
+    <button class="chat-suggestion" data-q="¿Qué es Internet?">🌐 Internet</button>
+    <button class="chat-suggestion" data-q="¿Cómo creo un correo?">✉️ Correo</button>
+    <button class="chat-suggestion" data-q="¿Qué es WhatsApp?">💬 WhatsApp</button>
+    <button class="chat-suggestion" data-q="¿Cómo evito estafas?">🛡️ Estafas</button>
+    <button class="chat-suggestion" data-q="¿Qué es Office?">💼 Office</button>
+    <button class="chat-suggestion" data-q="¿Qué es el WiFi?">📶 WiFi</button>
+  </div>
+  <div class="chat-input-area">
+    <input type="text" id="chat-input" class="chat-input" placeholder="Escribe tu pregunta..." aria-label="Escribe tu pregunta" maxlength="200" autocomplete="off"/>
+    <button class="chat-send" id="chat-send" aria-label="Enviar">➤</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
